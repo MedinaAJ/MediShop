@@ -1,0 +1,71 @@
+<!-- Banner del menu de administracion de la web -->
+<div class="contenedor-logo-medishop">
+    <img class="logo-medishop" src="assets/img/admin/logo.PNG" />
+</div>
+<div class="banner">
+    <div class="opciones-usuario">
+        <div class="datos">
+
+        </div>
+        <div class="logout" (click)="logout()">
+            <mat-icon class="icono">exit_to_app</mat-icon>
+            Cerrar sesión
+        </div>
+    </div>
+</div>
+
+<!-- Contenido -->
+<div class="content-admin">
+    <!-- Barra de navegacion del menu de administracion -->
+    <div class="col-sm-3 contenedor-barra-navegacion">
+        <ul class="barra-navegacion">
+            <li class="active">
+                <a [routerLink]="['/admin/home']">
+                    <mat-icon class="icono">home</mat-icon>Inicio
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/admin/list']">
+                    <mat-icon class="icono">storefront</mat-icon>Productos
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <mat-icon class="icono">account_tree</mat-icon>Categorias</a>
+            </li>
+            <li>
+                <a href="#">
+                    <mat-icon class="icono">business_center</mat-icon>Pedidos</a>
+            </li>
+            <li>
+                <a href="#">
+                    <mat-icon class="icono">shopping_cart</mat-icon>Carros de Compra</a>
+            </li>
+            <li>
+                <a href="#">
+                    <mat-icon class="icono">people</mat-icon>Clientes</a>
+            </li>
+            <li>
+                <a href="#">
+                    <mat-icon class="icono">person</mat-icon>Empleados</a>
+            </li>
+            <li>
+                <a href="#">
+                    <mat-icon class="icono">directions_bus</mat-icon>Transportistas</a>
+            </li>
+            <li>
+                <a href="#">
+                    <mat-icon class="icono">settings_application</mat-icon>Configuracion</a>
+            </li>
+            <li>
+                <a href="#">
+                    <mat-icon class="icono">help</mat-icon>Sobre MediShop</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Componentes visualizados durante la navegacion -->
+    <div class="col-sm-9">
+        <router-outlet></router-outlet>
+    </div>
+</div>

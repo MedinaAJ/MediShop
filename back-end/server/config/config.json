@@ -1,0 +1,27 @@
+{
+    "development": {
+        "username": "medinaaj",
+        "password": "C4me6AHVo12",
+        "database": "crearpaginasweb",
+        "host": "d344.dinaserver.com",
+        "dialect": "mysql",
+        "operatorsAliases": false
+    },
+    "test": {
+        "username": "medinaaj",
+        "password": "C4me6AHVo12",
+        "database": "crearpaginasweb",
+        "host": "d344.dinaserver.com",
+        "dialect": "mysql",
+        "operatorsAliases": false
+    },
+    "production": {
+        "username": "medinaaj",
+        "password": "C4me6AHVo12",
+        "database": "crearpaginasweb",
+        "host": "d344.dinaserver.com",
+        "dialect": "mysql",
+        "operatorsAliases": false
+    },
+    "token_secret": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+}

@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="content-login col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <h2>LOGIN</h2>
+        <form #loginForm="ngForm" (ngSubmit)="login()" autocomplete="off">
+            <mat-form-field class="col-xs-12">
+                <input matInput type="text" #email="ngModel" name="email" [(ngModel)]="employee.email" required placeholder="Email" autofocus>
+                <mat-error *ngIf="email.invalid">El email es necesario para iniciar sesión</mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="col-xs-12">
+                <input matInput type="text" #pass="ngModel" name="passwd" [(ngModel)]="employee.passwd" required placeholder="Contraseña">
+                <mat-error *ngIf="pass.invalid">El password es necesario para iniciar sesión</mat-error>
+            </mat-form-field>
+
+            <button mat-raised-button class="btn-ingreso" type="submit" [disabled]="!loginForm.form.valid">Ingresar</button>
+        </form>
+    </div>
+</div>

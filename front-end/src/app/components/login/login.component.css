@@ -1,0 +1,10 @@
+.content-login {
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	transform: translate(-50%, 0%);
+} 
+.btn-ingreso{
+	margin-left: 12px;
+	margin-top: 20px;
+}
