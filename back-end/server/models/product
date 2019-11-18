@@ -1,0 +1,49 @@
+module.exports = (sequelize, DataTypes) => {
+    const product = sequelize.define('product', {
+        id_product: {
+            autoIncrement: true,
+            primaryKey: true,
+            type: DataTypes.INTEGER
+        },
+        id_supplier: DataTypes.INTEGER,
+        id_manufacturer: DataTypes.INTEGER,
+        id_category_default: DataTypes.INTEGER,
+        on_sale: DataTypes.INTEGER,
+        online_only: DataTypes.INTEGER,
+        ean13: DataTypes.STRING,
+        upc: DataTypes.STRING,
+        ecotax: DataTypes.DECIMAL,
+        quantity: DataTypes.INTEGER,
+        minimal_quantity: DataTypes.INTEGER,
+        price: DataTypes.DECIMAL,
+        whosale_price: DataTypes.DECIMAL,
+        unity: DataTypes.STRING,
+        unity_price_ratio: DataTypes.DECIMAL,
+        additional_shipping_cost: DataTypes.DECIMAL,
+        reference: DataTypes.STRING,
+        supplier_reference: DataTypes.STRING,
+        location: DataTypes.STRING,
+        width: DataTypes.DECIMAL,
+        height: DataTypes.DECIMAL,
+        depth: DataTypes.DECIMAL,
+        weight: DataTypes.DECIMAL,
+        out_of_stock: DataTypes.INTEGER,
+        quantity_discount: DataTypes.INTEGER,
+        text_fields: DataTypes.INTEGER,
+        active: DataTypes.INTEGER,
+        redirect_type: DataTypes.ENUM('', '404', '301', '302'),
+        id_product_redirected: DataTypes.INTEGER,
+        available_for_order: DataTypes.INTEGER,
+        available_date: DataTypes.DATE,
+        condition: DataTypes.ENUM('new', 'used', 'refurbished'),
+        show_price: DataTypes.INTEGER,
+        indexed: DataTypes.INTEGER,
+        visibility: DataTypes.ENUM('both', 'catalog', 'search', 'none'),
+        is_virtual: DataTypes.INTEGER,
+        pack_stock_type: DataTypes.INTEGER,
+        createdAt: DataTypes.DATE,
+        updatedAt: DataTypes.DATE
+    })
+
+    return product;
+}
